@@ -1,37 +1,46 @@
 # QImen-Bot
 
 #### 介绍
-基于Go-cqhttp/Nonebot的插件
+此项目基于 Nonebot 和 go-cqhttp 开发的QQ群娱乐机器人
 
-#### 软件架构
-软件架构说明
+#### 关于
+本项目目前还是个半成品（qwq
 
+#### 声明
+此项目仅用于学习交流，请勿用于非法用途！
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+# 配置go-cqhttp
+在 https://github.com/Mrs4s/go-cqhttp 下载Releases最新版本，运行后选择反向代理，
+  然后将go-cqhttp的配置文件config.yml中的universal改为universal: ws://127.0.0.1:8080/ws
+最后运行并登录go-cqhttp
+# 获取代码
+git clone https://gitee.com/QimenIDC/qimen-bot.git
+# 进入目录
+cd qimen_bot
+# 安装依赖
+pip install -r requirements.txt
+# 基础配置
+1、在config.py文件中
+     SUPERUSERS = [""]   # 填写你的QQ
+     NICKNAME = {'小明', '明明'}   #修改为bot的称呼
+# 开始运行
+python bot.py
+```
+
+#### 已实现的功能
+- [x] 天气查询
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+目前只有一个查询天气功能，只要发送的消息中包含“天气”就会自动恢复！
+##示例
+```
+#今天南京天气怎么样？
+#今天天气怎么样？
+#小明，今天天气怎么样？
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#/天气 南京
+```
