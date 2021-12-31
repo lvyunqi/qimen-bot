@@ -1,0 +1,3 @@
+requests
+nonebot
+jieba==0.42.1
