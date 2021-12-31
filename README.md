@@ -24,7 +24,7 @@ cd qimen_bot
 pip install -r requirements.txt
 # 基础配置
 1、在config.py文件中
-     SUPERUSERS = [""]   # 填写你的QQ
+     SUPERUSERS = {123456}   # 填写你的QQ
      NICKNAME = {'小明', '明明'}   #修改为bot的称呼
 # 开始运行
 python bot.py
